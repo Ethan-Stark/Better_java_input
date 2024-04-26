@@ -34,7 +34,7 @@ public class JavaInp {
     private static Scanner inpScanner = new Scanner(System.in);
     private final static String StandardErrorMsg = "Invalid response. Please try again.";
     
-    final static convertToType<Double> DoubleConvert = new convertToType<Double>() {
+    public final static convertToType<Double> DoubleConvert = new convertToType<Double>() {
         @Override
         public Double Transform(String UserInp) {
 
@@ -44,7 +44,7 @@ public class JavaInp {
         }
     };
 
-    final static convertToType<Integer> IntegerConvert = new convertToType<Integer>() {
+    public final static convertToType<Integer> IntegerConvert = new convertToType<Integer>() {
 
         @Override
         public Integer Transform(String UserInp) {
@@ -53,14 +53,14 @@ public class JavaInp {
         
     };
 
-    final static convertToType<String> StringConvert = new convertToType<String>() {
+    public final static convertToType<String> StringConvert = new convertToType<String>() {
         @Override
         public String Transform(String UserInp) {
             return UserInp;
         }
     };
 
-    final static convertToType<Boolean> BooleanConvert = new convertToType<Boolean>() {
+    public final static convertToType<Boolean> BooleanConvert = new convertToType<Boolean>() {
         @Override
         public Boolean Transform(String UserInp) {
             Boolean IsBool = null;
